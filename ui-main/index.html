@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>%что-то% | Панель администратора</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard-main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">%что-то%</a>
+      <div class="w-100"></div>
+      <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Поиск" aria-label="Search"> -->
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">
+                  <span data-feather="home"></span>
+                  Статистика <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Группы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Статистика системы</h1>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card logic-block" style="height: 100%;">
+                <h5 class="card-header">Обработанные даннные</h5>
+                <div class="card-body">
+                  <p class="info-card-element"><b>Пользователей:</b> 44726</p>
+                  <p class="info-card-element"><b>Групп:</b> 13456</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+
+            </div>
+          </div>
+          <div class="card logic-block" style="height: 100%;">
+              <h5 class="card-header">Группы</h5>
+              <div class="card-body">
+                <div id="canvas-holder" style="width:50%">
+                  <canvas id="group-stats1"></canvas>
+                </div>
+              </div>
+            </div>
+          <div class="row" style="margin-top: 1em">
+            <div class="col">
+              <div class="card logic-block">
+                <h5 class="card-header">Статистика</h5>
+                <div class="card-body">
+                  <h5>Записи (среднее значение на последние 100)</h5>
+                  <div class="row">
+                    <div class="col">
+                      <p class="info-card-element"><span data-feather="eye"></span> <b>Просмотров записей:</b> 9682</p>
+                      <p class="info-card-element"><span data-feather="heart"></span> <b>Отметок "Мне нравится":</b> 146</p>
+                      <p class="info-card-element"><span data-feather="share-2"></span> <b>Репостов:</b> 31</p>
+                    </div>
+                    <div class="col">
+                      <p class="info-card-element"><span data-feather="dollar-sign"></span> <b>Рекламных постов:</b> 7</p>
+                      <p class="info-card-element"><span data-feather="message-square"></span> <b>Комментариев:</b> 22</p>
+                    </div>
+                  </div>
+
+                  <hr/>
+                  <h5>Прочий контент</h5>
+                  <div class="row">
+                    <div class="col">
+                      <p class="info-card-element"><span data-feather="message-square"></span> <b>Обсуждений:</b> 39</p>
+                    </div>
+                    <div class="col">
+                      <p class="info-card-element"><span data-feather="video"></span> <b>Видеозаписей:</b> 10000</p>
+                    </div>
+                    <div class="col">
+                      <p class="info-card-element"><span data-feather="music"></span> <b>Аудиозаписей:</b> 24</p>
+                    </div>
+                  </div>
+                  <h5></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>feather.replace()</script>
+
+    <!-- Graphs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="./js/group-members-chart.js"></script>
+    <script>
+		
+    </script>
+  </body>
+</html>
