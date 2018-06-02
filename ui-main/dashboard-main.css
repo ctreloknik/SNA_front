@@ -3,6 +3,10 @@
   margin-bottom: 1em;
 }
 
+.info-card-element {
+  margin-bottom: .3em;
+}
+
 #group-list > tbody > tr > td:first-child {
   font-weight: bold;
   text-decoration: underline;
