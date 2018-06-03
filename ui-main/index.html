@@ -35,7 +35,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="layers"></span>
-                  Группы
+                  Сообщества
                 </a>
               </li>
             </ul>
@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="card logic-block" style="height: 100%; margin-top: 1.5em">
-            <h5 class="card-header">Группы</h5>
+            <h5 class="card-header">Сообщества</h5>
             <div class="card-body">
               <div class="row">
                 <div class="col-md-6">
@@ -67,6 +67,22 @@
                 </div>
                 <div class="col-md-6">
                   <canvas id="group-stats2"></canvas>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <canvas id="group-stats3"></canvas>
+                </div>
+                <div class="col-md-6">
+                  <canvas id="group-stats4"></canvas>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <canvas id="group-stats5"></canvas>
+                </div>
+                <div class="col-md-6">
+                  <canvas id="group-stats6"></canvas>
                 </div>
               </div>
             </div>
@@ -102,12 +118,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="./js/group-types-chart.js"></script>
     <script src="./js/group-members-chart.js"></script>
+    <script src="./js/group-age-chart.js"></script>
+    <script src="./js/group-privacy-chart.js"></script>
+    <script src="./js/group-activity-chart.js"></script>
+    <script src="./js/group-store-chart.js"></script>
     <script>
     window.onload = function() {
       var ctx1 = document.getElementById('group-stats1').getContext('2d');
       var ctx2 = document.getElementById('group-stats2').getContext('2d');
+      var ctx3 = document.getElementById('group-stats3').getContext('2d');
+      var ctx4 = document.getElementById('group-stats4').getContext('2d');
+      var ctx5 = document.getElementById('group-stats5').getContext('2d');
+      var ctx6 = document.getElementById('group-stats6').getContext('2d');
       new Chart(ctx1, membersChartConfig);
       new Chart(ctx2, typesChartConfig);
+      new Chart(ctx3, ageChartConfig);
+      new Chart(ctx4, privacyChartConfig);
+      new Chart(ctx5, activityChartConfig);
+      new Chart(ctx6, groupStoreChartConfig);
     };
     </script>
   </body>
